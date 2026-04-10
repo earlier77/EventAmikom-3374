@@ -20,8 +20,8 @@
     <div class="flex items-center justify-center">
         <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200 text-center max-w-md w-full">
             <img class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-indigo-100" src="https://ui-avatars.com/api/?name=Praktikan&background=random" alt="Profile Image">
-            <h1 class="text-2xl font-bold text-slate-800 mb-1">EventAmikom</h1>
-            <p class="text-indigo-500 font-semibold mb-4">NIM: 24.12.3374</p>
+            <h1 class="text-2xl font-bold text-slate-800 mb-1">Nama Praktikan</h1>
+            <p class="text-indigo-500 font-semibold mb-4">NIM: 12345678</p>
             <p class="text-slate-600 text-sm">Mahasiswa Program Studi S1 Sistem Informasi Universitas AMIKOM Yogyakarta yang sedang mendalami Web Development.</p>
         </div>
     </div>

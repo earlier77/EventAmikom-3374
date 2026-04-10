@@ -14,6 +14,7 @@ return view('contact');
 Route::get('/profil', function () {
     return view('profil');
 });
+
 Route::get('/katalog', function () {
     return view('katalog');
 });
