@@ -1,7 +1,22 @@
-# 24.12.3374_Dzacky-Arcaya-Rahman
+NIM 24.12.3374 NAMA : DZACKY ARCAYA RAHMAN
 
-# Tugas 1
-# https://eventamikom-3374-main-jjpdch.free.laravel.cloud/
+LINK LARAVEL CLOUD : https://eventamikom-3374-main-jjpdch.free.laravel.cloud
+
+TUGAS 1 : 
+BERANDA:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/beranda
+KONTAK:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/kontak 
+PROFILE:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/profil 
+BANTUAN:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/bantuan
+KATALOG:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/katalog
+
+TUGAS 2 :
+DASHBOARD:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin-dashboard.html
+EVENT:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin-events.html
+TRANSAKSI:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin-transactions.html
+
+BERANDA:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/
+DETAIL EVENT:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/event/1
+CHECKOUT:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/checkout
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
