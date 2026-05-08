@@ -2,26 +2,27 @@ NIM 24.12.3374 NAMA : DZACKY ARCAYA RAHMAN
 
 LINK LARAVEL CLOUD : https://eventamikom-3374-main-jjpdch.free.laravel.cloud
 
-TUGAS 1 : 
-BERANDA:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/beranda
-KONTAK:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/kontak 
-PROFILE:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/profil 
-BANTUAN:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/bantuan
-KATALOG:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/katalog
+TUGAS 1 : <br>
+BERANDA:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/beranda <br>
+KONTAK:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/kontak <br>
+PROFILE:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/profil <br>
+BANTUAN:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/bantuan <br>
+KATALOG:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/katalog <br>
 
-TUGAS 2 :
-DASHBOARD:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin-dashboard.html
-EVENT:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin-events.html
-TRANSAKSI:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin-transactions.html
+TUGAS 2 : <br>
+DASHBOARD:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin-dashboard.html <br>
+EVENT:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin-events.html <br>
+TRANSAKSI:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin-transactions.html <br>
 
-BERANDA:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/
-DETAIL EVENT:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/event/1
-CHECKOUT:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/checkout
+BERANDA:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/ <br>
+DETAIL EVENT:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/event/1 <br>
+CHECKOUT:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/checkout <br>
 
-TUGAS 3 :
+TUGAS 3 : <br>
 Menambahkan database migration/seeding
 
-TUGAS 4:
+TUGAS 4: <br>
+
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
