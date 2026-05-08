@@ -18,6 +18,12 @@ BERANDA:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/
 DETAIL EVENT:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/event/1
 CHECKOUT:https://eventamikom-3374-main-jjpdch.free.laravel.cloud/checkout
 
+TUGAS 3 :
+Menambahkan database migration/seeding
+
+TUGAS 4:
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
