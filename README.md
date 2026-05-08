@@ -22,6 +22,7 @@ TUGAS 3 : <br>
 Menambahkan database migration/seeding
 
 TUGAS 4: <br>
+https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin/events
 
 
 
