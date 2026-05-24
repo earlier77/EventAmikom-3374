@@ -5,6 +5,8 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\EventController as EventAdminController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\PartnerController;
 // use App\Http\Controllers\Admin\EventController as AdminEventController;
 
 
@@ -13,6 +15,8 @@ use App\Http\Controllers\Admin\EventController as EventAdminController;
 // });
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('events', EventAdminController::class);
+    Route::resource('categories', CategoryController::class);
+    Route::resource('partners', PartnerController::class);
 });
 Route::get('/tentang', function () { 
 return '<h1>Ini adalah Halaman Tentang Aplikasi Event Hub</h1>'; 

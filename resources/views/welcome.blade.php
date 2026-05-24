@@ -57,8 +57,11 @@
                 <h2 class="text-3xl font-extrabold mb-2">Event Terdekat</h2>
                 <p class="text-slate-500 font-medium">Jangan sampai ketinggalan acara seru minggu ini!</p>
             </div>
-            <div class="flex gap-2">
-                <button class="p-3 border rounded-xl hover:bg-white hover:shadow-md transition">Semua Kategori</button>
+            <div class="flex flex-wrap gap-2">
+                <button class="px-5 py-2.5 bg-indigo-600 text-white rounded-xl font-bold shadow-md transition">Semua Kategori</button>
+                @foreach($categories as $category)
+                    <button class="px-5 py-2.5 border border-slate-200 bg-white hover:bg-slate-50 rounded-xl font-semibold text-slate-600 transition">{{ $category->name }}</button>
+                @endforeach
             </div>
         </div>
 
@@ -149,6 +152,27 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16 border-t border-slate-100">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold mb-3">Partner Resmi Kami</h2>
+            <p class="text-slate-500 font-medium max-w-lg mx-auto">Kami didukung oleh berbagai instansi, komunitas, dan perusahaan terkemuka untuk menyelenggarakan event terbaik.</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
+            @forelse($partners as $partner)
+                <div class="group flex flex-col items-center justify-center p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-indigo-100 transition-all duration-300 w-full h-32">
+                    @if($partner->logo_url)
+                        <img src="{{ asset('storage/' . $partner->logo_url) }}" alt="{{ $partner->name }}" class="max-w-full max-h-16 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+                    @endif
+                    <span class="mt-2 text-xs font-semibold text-slate-400 group-hover:text-indigo-600 transition text-center">{{ $partner->name }}</span>
+                </div>
+            @empty
+                <div class="col-span-full text-center text-slate-400 font-medium py-4">Belum ada partner terdaftar.</div>
+            @endforelse
         </div>
     </section>
 @endsection
