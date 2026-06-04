@@ -54,7 +54,7 @@
                     <td class="px-8 py-6">
                         @if($partner->logo_url)
                             <div class="w-20 h-12 bg-slate-100 rounded-xl overflow-hidden shadow-sm flex items-center justify-center p-1 border border-slate-200">
-                                <img src="{{ asset('storage/' . $partner->logo_url) }}" class="max-w-full max-h-full object-contain">
+                                <img src="{{ str_starts_with($partner->logo_url, 'http') ? $partner->logo_url : asset('storage/' . $partner->logo_url) }}" class="max-w-full max-h-full object-contain">
                             </div>
                         @else
                             <span class="text-xs text-slate-400 italic">Tidak ada logo</span>

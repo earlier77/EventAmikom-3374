@@ -166,7 +166,7 @@
             @forelse($partners as $partner)
                 <div class="group flex flex-col items-center justify-center p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-indigo-100 transition-all duration-300 w-full h-32">
                     @if($partner->logo_url)
-                        <img src="{{ asset('storage/' . $partner->logo_url) }}" alt="{{ $partner->name }}" class="max-w-full max-h-16 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+                        <img src="{{ str_starts_with($partner->logo_url, 'http') ? $partner->logo_url : asset('storage/' . $partner->logo_url) }}" alt="{{ $partner->name }}" class="max-w-full max-h-16 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
                     @endif
                     <span class="mt-2 text-xs font-semibold text-slate-400 group-hover:text-indigo-600 transition text-center">{{ $partner->name }}</span>
                 </div>

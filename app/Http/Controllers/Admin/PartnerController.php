@@ -37,14 +37,18 @@ class PartnerController extends Controller
     {
         $data = $request->validate([
             'name' => 'required|string|max:255|unique:partners,name',
-            'logo' => 'required|image|mimes:jpg,png,jpeg,webp|max:2048',
+            'logo' => 'required_without:logo_url|nullable|image|mimes:jpg,png,jpeg,webp|max:2048',
+            'logo_url' => 'required_without:logo|nullable|url|max:2048',
         ]);
 
         if ($request->hasFile('logo')) {
             $data['logo_url'] = $request->file('logo')->store('partners', 'public');
         }
 
-        Partner::create($data);
+        Partner::create([
+            'name' => $data['name'],
+            'logo_url' => $data['logo_url'] ?? $request->input('logo_url'),
+        ]);
 
         return redirect()->route('admin.partners.index')->with('success', 'Partner berhasil ditambahkan.');
     }
@@ -65,13 +69,19 @@ class PartnerController extends Controller
         $data = $request->validate([
             'name' => 'required|string|max:255|unique:partners,name,' . $partner->id,
             'logo' => 'nullable|image|mimes:jpg,png,jpeg,webp|max:2048',
+            'logo_url' => 'nullable|url|max:2048',
         ]);
 
         if ($request->hasFile('logo')) {
-            if ($partner->logo_url) {
+            if ($partner->logo_url && !str_starts_with($partner->logo_url, 'http')) {
                 Storage::disk('public')->delete($partner->logo_url);
             }
             $data['logo_url'] = $request->file('logo')->store('partners', 'public');
+        } elseif ($request->filled('logo_url')) {
+            if ($partner->logo_url && !str_starts_with($partner->logo_url, 'http')) {
+                Storage::disk('public')->delete($partner->logo_url);
+            }
+            $data['logo_url'] = $request->input('logo_url');
         }
 
         $partner->update($data);
@@ -84,7 +94,7 @@ class PartnerController extends Controller
      */
     public function destroy(Partner $partner)
     {
-        if ($partner->logo_url) {
+        if ($partner->logo_url && !str_starts_with($partner->logo_url, 'http')) {
             Storage::disk('public')->delete($partner->logo_url);
         }
 

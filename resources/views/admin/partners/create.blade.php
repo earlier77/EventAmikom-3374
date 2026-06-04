@@ -18,10 +18,25 @@
         </div>
 
         <div>
-            <label class="block text-sm font-bold text-slate-700 mb-2">Logo Partner</label>
-            <input type="file" name="logo" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100 @error('logo') border-rose-500 @enderror" required>
+            <label class="block text-sm font-bold text-slate-700 mb-2">Logo Partner (Upload File)</label>
+            <input type="file" name="logo" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100 @error('logo') border-rose-500 @enderror">
             <p class="text-xs text-slate-400 mt-1">Hanya file JPG, JPEG, PNG, atau WEBP dengan ukuran maks 2MB.</p>
             @error('logo')
+                <p class="text-rose-500 text-xs mt-2 font-semibold">{{ $message }}</p>
+            @enderror
+        </div>
+
+        <div class="relative flex py-2 items-center">
+            <div class="flex-grow border-t border-slate-200"></div>
+            <span class="flex-shrink mx-4 text-slate-400 text-sm font-semibold">ATAU</span>
+            <div class="flex-grow border-t border-slate-200"></div>
+        </div>
+
+        <div>
+            <label class="block text-sm font-bold text-slate-700 mb-2">Logo URL (Eksternal)</label>
+            <input type="text" name="logo_url" value="{{ old('logo_url') }}" placeholder="Contoh: https://placehold.co/200x200" class="w-full px-5 py-3 rounded-xl border @error('logo_url') border-rose-500 focus:ring-rose-500 @else border-slate-200 focus:ring-indigo-500 @enderror outline-none focus:ring-2 bg-white transition">
+            <p class="text-xs text-slate-400 mt-1">Masukkan URL gambar eksternal jika tidak ingin mengunggah file.</p>
+            @error('logo_url')
                 <p class="text-rose-500 text-xs mt-2 font-semibold">{{ $message }}</p>
             @enderror
         </div>
