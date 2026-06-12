@@ -8,8 +8,12 @@ use App\Http\Controllers\Admin\EventController as EventAdminController;
 // use App\Http\Controllers\Admin\EventController as AdminEventController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\TransactionController;
+use App\Http\Controllers\CheckoutController;
 
 
+Route::get('transactions', [TransactionController::class, 'index'])->name('transactions.index');
+Route::get('/checkout/{event}', [CheckoutController::class, 'create'])->name('checkout.create');
+Route::post('/checkout/{event}', [CheckoutController::class, 'store'])->name('checkout.store');
 Route::get('/login', function () {
     return redirect()->route('admin.login');
 })->name('login');

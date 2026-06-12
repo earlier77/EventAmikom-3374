@@ -51,6 +51,12 @@
                    {{ request()->routeIs('admin.events.*') ? 'bg-indigo-800 text-white' : 'hover:bg-indigo-800' }}">
                     Kelola Event
                 </a>
+
+                <a href="{{ route('admin.transactions.index') }}"
+                   class="flex items-center gap-3 px-4 py-3 rounded-xl font-bold transition
+                   {{ request()->routeIs('admin.transactions.*') ? 'bg-indigo-800 text-white' : 'hover:bg-indigo-800' }}">
+                    Laporan Transaksi
+                </a>
             </nav>
 
             <!-- Logout -->
