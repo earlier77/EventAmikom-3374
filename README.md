@@ -35,7 +35,7 @@ Laporan Transaksi : https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admi
 
 TUGAS 11: <br>
 isi data & pesan : https://eventamikom-3374-main-jjpdch.free.laravel.cloud/checkout/1 <br>
-Pembayaran Transaksi : https://eventamikom-3374-main-jjpdch.free.laravel.cloud/payment/TRX-1782453940-1qunC <br>
+Pembayaran Transaksi : https://eventamikom-3374-main-jjpdch.free.laravel.cloud/payment/TRX-1782463020-hhxZC <br>
 Laporan Transaksi : https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin/transactions
 
 
