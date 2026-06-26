@@ -33,6 +33,11 @@ isi data & pesan : https://eventamikom-3374-main-jjpdch.free.laravel.cloud/check
 login admin : https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin/login <br>
 Laporan Transaksi : https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin/transactions
 
+TUGAS 11: <br>
+isi data & pesan : https://eventamikom-3374-main-jjpdch.free.laravel.cloud/checkout/1 <br>
+Pembayaran Transaksi : https://eventamikom-3374-main-jjpdch.free.laravel.cloud/payment/TRX-1782453940-1qunC <br>
+Laporan Transaksi : https://eventamikom-3374-main-jjpdch.free.laravel.cloud/admin/transactions
+
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
