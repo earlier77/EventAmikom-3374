@@ -10,7 +10,8 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\TransactionController;
 use App\Http\Controllers\CheckoutController;
 
-
+Route::get('/payment/{order_id}', [\App\Http\Controllers\CheckoutController::class, 'payment'])->name('checkout.payment');
+Route::get('/success/{order_id}',  [\App\Http\Controllers\CheckoutController::class, 'success'])->name('checkout.success');
 Route::get('transactions', [TransactionController::class, 'index'])->name('transactions.index');
 Route::get('/checkout/{event}', [CheckoutController::class, 'create'])->name('checkout.create');
 Route::post('/checkout/{event}', [CheckoutController::class, 'store'])->name('checkout.store');
